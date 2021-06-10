@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Buscando conjuntos</title>
+</head>
+<body>
+	<div id="signDiv">
+		<h1>ENCUENTRA CONJUNTOS</h1>
+		<h2>Nombre del jugador:</h2><input id="user" type="text"></input>
+		<br>
+		<button onclick = "signIn();"> ENVIAR </button>
+		<!--<h2> Hay talento, solo falta apoyarlo </h2>-->
+	</div>
+
+	<div id = "board" style="display:none;">
+		<table id = "board_table" style = "float: left">
+			<div id = "boardContainer" style="display:none;">
+				<tr>
+					<td> <canvas class = "board_card", id = "0", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "3", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "6", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "9", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "12", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "15", width = "130", height = "180"></canvas> </td>
+				</tr>
+				<tr>
+					<td> <canvas class = "board_card", id = "1", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "4", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "7", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "10", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "13", width = "130", height = "180"></canvas> </td>
+					<td style = "position: absolute"> <canvas class = "board_card", id = "button1", width = "200", height = "100"></canvas>
+					<canvas class = "board_card", id = "button2", width = "200", height = "100" ></canvas>
+					</td>
+				</tr>
+				<tr>
+					<td> <canvas class = "board_card", id = "2", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "5", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "8", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "11", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "14", width = "130", height = "180"></canvas> </td>
+					<td> <canvas class = "board_card", id = "button3", width = "200", height = "100">hola 3</canvas></td>
+				</tr>
+			</div>
+		</table>
+		
+		<table style = "color: black; width: 18%; float: right;">
+			<td>
+				<h2>Jugadores</h2>
+				<ol id = "players"> </ol>
+			</td>
+			<td style = "float: left;">
+				<h2>Puntos</h2>
+				<ol id = "points" style = "list-style-type: none;"> </ol>
+			</td>
+		</table>
+
+	</div>
+
+	<div id = "messages" style="display:none;">
+		Aqui van los mensajes del servidor
+	</div>
+
+	<script src="../socket.io/socket.io.js"></script>
+	<script type = "text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+	<script src="main.js"></script>
+</body>
+</html>
+

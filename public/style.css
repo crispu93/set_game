@@ -1,0 +1,108 @@
+body {
+	/*background: #1C1C1C;*/
+	background-image: url("campusviviente2.1.jpg");
+	background-size: 100% auto;
+	width: 100%;
+	heigth: 100%;
+}
+html {
+	width: 100%;
+	heigth: 100%;
+}
+
+#boardgame {
+	border-collapse: collapse;
+}
+
+#board {
+	background: #AEB404;
+	/*background: #648880;*/
+	background: linear-gradient(to left, #f6f1d3, #648880, #293f50);
+	width: 98%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#boardContainer {
+	background: #000000;
+	opacity: 0.8;
+	width: 43.5em;
+	height: 37.5em;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	position: absolute;
+}
+
+#signDiv {
+	color: black; 
+	text-align: center; 
+	background-color: white;
+	opacity: 0.8;
+	padding: 15px 15px;
+	width: 30%;
+	position: float;
+}
+
+canvas.board_card {
+	border:2px solid #000000;
+	margin: 2%;
+	border-radius: 15px;
+	background: #FFFFFF;
+	opacity: 1;
+	box-shadow: inset 0 0 10px #000000;
+}
+
+#button1 {
+	border:2px solid #151515;
+	margin: 1%;
+	background: #E2A9F3;
+}
+
+#button2 {
+	border:2px solid #151515;
+	margin: 1%;
+	background: #A9F5A9;
+}
+
+#button3 {
+	border:2px solid #151515;
+	margin: 1%;
+	background: #F5A9A9;
+}
+
+#messages {
+	background: #FFFFFF;
+	border:2px solid #151515;
+	margin: 1%;
+	padding: 1%;
+	width: 70%;
+	border-radius: 15px;
+	font-size: 30px;
+	font-style: oblique;
+}
+
+input[type=text] {
+	width: 50%;
+	height: 100%;
+	padding: 12px 20px;
+	margin: 0px 0;
+	box-sizing: border-box;
+	font-size:24px;
+	background-color: #A9F5A9;
+	color: #FFFFFF;
+}
+
+button {
+	background-color: #43A607;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 15px 2px;
+	cursor: pointer;
+}
