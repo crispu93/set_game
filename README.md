@@ -1,7 +1,8 @@
 # Set Game
-Install dependencies
+
+## Install dependencies
 npm install
 
-run app
+## Run app
 npm start
 
